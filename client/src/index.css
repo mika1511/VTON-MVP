@@ -1,0 +1,157 @@
+/* ===== Body & App ===== */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(135deg, #ffd1dc, #ffe6f0, #c1f0f6);
+  transition: background 0.5s ease-in-out;
+}
+
+.app {
+  max-width: 900px;
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  border-radius: 20px;
+  background: rgba(255,255,255,0.8);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+  backdrop-filter: blur(10px);
+  transition: transform 0.3s ease;
+}
+
+.app:hover {
+  transform: scale(1.02);
+}
+
+/* ===== Header ===== */
+h1 {
+  color: #ff69b4;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px #ffe6f0;
+  transition: color 0.3s;
+}
+
+h1:hover {
+  color: #ff85c1;
+  transform: rotate(-2deg);
+}
+
+/* ===== Upload Section ===== */
+.upload-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 30px;
+  flex-wrap: wrap;
+}
+
+.upload-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10px;
+  background: #fff0f5;
+  padding: 15px;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.upload-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+}
+
+.upload-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #ff69b4, #ff85c1);
+  color: white;
+  border-radius: 12px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.upload-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 6px 12px rgba(255,105,180,0.5);
+}
+
+.upload-btn input {
+  display: none;
+}
+
+.preview-image {
+  margin-top: 10px;
+  width: 150px;
+  height: auto;
+  border-radius: 12px;
+  border: 2px solid #ffd1dc;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+  transition: transform 0.2s;
+}
+
+.preview-image:hover {
+  transform: scale(1.05) rotate(-1deg);
+}
+
+/* ===== Canvas Section ===== */
+.canvas-section {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  padding: 20px;
+  border-radius: 20px;
+  background: #fff0f5;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  transition: transform 0.3s;
+}
+
+.canvas-section:hover {
+  transform: scale(1.01);
+}
+
+/* ===== Slider Section ===== */
+.slider-section {
+  margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.slider-section label {
+  font-weight: 600;
+  color: #ff69b4;
+  margin-bottom: 5px;
+  text-shadow: 1px 1px #ffe6f0;
+}
+
+.slider-section input[type=range] {
+  width: 220px;
+  margin: 5px 0 15px 0;
+  accent-color: #ff69b4;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.slider-section input[type=range]:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Canvas Hover Effect ===== */
+canvas {
+  border: 2px solid #ffd1dc;
+  border-radius: 15px;
+  cursor: grab;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.15);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+canvas:active {
+  cursor: grabbing;
+  transform: scale(1.02);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
