@@ -30,7 +30,6 @@ This project focuses on demonstrating the **core try-on flow** using a simple fu
 ![Upload Model](client/public/model_image.png)
 
 ### 2️⃣ Upload Dress Image
-![Upload Dress](client/public/dress_image.png)
 ![Upload Dress](client/public/dress.png)
 
 ### 3️⃣ Final Try-On Output
